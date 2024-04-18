@@ -1,0 +1,80 @@
+:root{
+  --white: #FFF;
+  --primary: #61ECBC;
+  --black: #182339;
+}
+
+html{
+  /*to use rem as px*/
+  font-size: 62.5%;
+
+}
+
+body{
+  background-image: url("/bg2.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-size: 2rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container{
+  max-width: 60rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.app-title{
+  font-size: 3.8rem;
+  margin-top: 5rem;
+  color: var(--white);
+}
+
+.app-title span{
+  color: var(--primary);
+  font-size: 4.4rem;
+}
+
+.content{
+  margin-top: 5rem;
+  padding:6rem 2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.form, .field{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.form label{
+  color: var(--black);
+}
+
+.form select{
+  background-color: #ECEBEB;
+  border: none;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.form [type="submit"]{
+  background-color: var(--primary);
+  color: var(--black);
+  border:none;
+  padding: 1rem;
+  font-weight: 900;
+  cursor:pointer;
+  text-transform: uppercase;
+  margin-top:2rem;
+  transition: background-color 300 ms ease;
+}
+
+.form [type="submit"]:hover{
+  background-color: #0CB378;
+}
