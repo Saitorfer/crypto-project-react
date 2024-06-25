@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { CurrencySchema,CryptoCurrencyResponseSchema } from "../schemas/crypto-schema";
+import { CurrencySchema,CryptoCurrencyResponseSchema,PairSchema } from "../schemas/crypto-schema";
 
 
 
@@ -7,3 +7,5 @@ import { CurrencySchema,CryptoCurrencyResponseSchema } from "../schemas/crypto-s
 export type Currency = z.infer<typeof CurrencySchema>
 
 export type CryptoCurrency = z.infer<typeof CryptoCurrencyResponseSchema>
+
+export type Pair = z.infer<typeof PairSchema>

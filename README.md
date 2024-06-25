@@ -1,6 +1,6 @@
 # crypto-project-react
  
-In this project we use zod and zustand
+In this project we use react, vite,zod, zustand and axios
 we do 3 types of calls:
 1) a call to and already create object with his info saved in data folder
 2) a call to an API when you init the project that give you the 20 cryptos with more marketcap (in service folder) (we init it in App.tsx and get the result in the component)
