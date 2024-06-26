@@ -31,8 +31,7 @@ export async function fetchCurrentCryptoPrice(pair: Pair) {
     DISPLAY[pair.criptocurrency][pair.currency]
   );
   if (result.success) {
-    if (result.success) {
       return result.data;
-    }
+
   }
 }
