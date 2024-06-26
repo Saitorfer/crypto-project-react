@@ -15,7 +15,7 @@ export default function CryptoPriceDisplay() {
     <div className="result-wrapper">
       {loading ? (<Spinner />) : (hasResult && (
           <>
-            <h2>Cotización</h2>
+            <h2>Exchange Price:</h2>
             <div className="result">
               <img
                 src={`https://cryptocompare.com/${result.IMAGEURL}`}
@@ -35,7 +35,7 @@ export default function CryptoPriceDisplay() {
                   Variation last 24 hours: <span>{result.CHANGEPCT24HOUR}</span>
                 </p>
                 <p>
-                  last Update: <span>{result.LASTUPDATE}</span>
+                  Last Update: <span>{result.LASTUPDATE}</span>
                 </p>
               </div>
             </div>
